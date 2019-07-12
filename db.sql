@@ -1,6 +1,6 @@
 CREATE USER 'manager'@'%' IDENTIFIED BY 'Manager#123';
 CREATE DATABASE users;
-GRANT ALL PRIVILEGES ON * . * TO 'manager'@'%';
+GRANT ALL PRIVILEGES ON users. * TO 'manager'@'%';
 FLUSH PRIVILEGES;
 USE users;
 CREATE TABLE users(
